@@ -85,7 +85,6 @@ const displayModule = (md1, md2, counter) => {
             document.getElementById("mainframe").innerHTML += 
             `<div class="bars" style="width:${arrayOfNums[i]}%;height:${height}px;
             background-color:red;
-            border-top-left-radius: 15px;
             border-top-right-radius:10px;
             border-bottom-right-radius:10px;"></div>`
             continue;
@@ -94,7 +93,6 @@ const displayModule = (md1, md2, counter) => {
             document.getElementById("mainframe").innerHTML += 
             `<div class="bars" style="width:${arrayOfNums[i]}%;height:${height}px;
             background-color:yellow;
-            border-top-left-radius: 15px;
             border-top-right-radius:10px;
             border-bottom-right-radius:10px;"></div>`
             continue;
@@ -103,7 +101,6 @@ const displayModule = (md1, md2, counter) => {
             document.getElementById("mainframe").innerHTML += 
             `<div class="bars" style="width:${arrayOfNums[i]}%;height:${height}px;
             background-color:yellow;
-            border-top-left-radius: 15px;
             border-top-right-radius:10px;
             border-bottom-right-radius:10px;"></div>`
             continue;
