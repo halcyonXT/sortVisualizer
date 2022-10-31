@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="icon.png" rel="icon">
+        <meta charset="utf-8">
+        <title>Sort visualizer</title>
+    </head>
+    <body>
+        <div id="menuBar" style="display:flex">
+            <h3 id="logo">SORT VISUALIZER</h3>
+            <button onclick="generate()" id="genButton">GENERATE</button>
+            <button id="menuButton">MENU</button>
+            <div id="dd" class="dropdown-content">
+                <div id="innerMenu">
+                    <h2 id="closeButton" onclick="closeDropdown()">BACK</h2>
+                    <h2 class="generalText">Number of items:</h2>
+                    <div class="slidecontainer">
+                        <input type="range" min="10" max="150" value="50" class="slider" id="inputNums">
+                    </div>
+                    <h4 class="generalText" id="numItems">50</h4><br>
+                    <h2 class="generalText">Background color:</h2>
+                    <div style="display:flex">
+                        <input class="customBck" type="text" value="255" placeholder="R" id="R">
+                        <input class="customBck" type="text" value="255" placeholder="G" id="G">
+                        <input class="customBck" type="text" value="255" placeholder="B" id="B">
+                    </div><br>
+                    <h2 class="generalText">Red multiplier:</h4>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="200" value="100" class="slider" id="itemR">
+                    </div><br>
+                    <h2 class="generalText">Green multiplier:</h4>
+                        <div class="slidecontainer">
+                        <input type="range" min="0" max="200" value="100" class="slider" id="itemG">
+                    </div><br>
+                    <h2 class="generalText">Blue multiplier:</h4>
+                        <div class="slidecontainer">
+                        <input type="range" min="0" max="200" value="100" class="slider" id="itemB">
+                    </div><br>
+                    <h2 class="generalText">Sort speed:</h4>
+                        <div class="slidecontainer">
+                        <input type="range" min="0" max="200" value="200" class="slider" id="sortSp">
+                    </div><br>
+                    <h5 class="generalText" id="notice" style="color:yellow;display:none">Item color changes not implemented until list is regenerated</h6>
+                </div>
+            </div>
+            <button id="startButton" onclick="executeSort()">START</button>
+        </div>
+        <div id="mainframe">
+        </div>
+        <script src="sortScript.js"></script>
+    </body>
+</html>
