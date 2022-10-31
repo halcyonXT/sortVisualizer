@@ -1,2 +1,3 @@
-# superheroAPI
+# sortVisualizer
+
 JS stuff
